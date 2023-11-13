@@ -1,0 +1,39 @@
+:root {
+  --top-bar-height: 6rem;
+  --footer-height: 4rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  height: var(--top-bar-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #555555;
+}
+
+footer {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: limegreen;
+  background-color: #555555;
+}
+
+a {
+  color: #7DF9FF;
+}
+
+main {
+  background-color: black;
+  height: calc(100% - var(--top-bar-height) - var(--footer-height));
+}
